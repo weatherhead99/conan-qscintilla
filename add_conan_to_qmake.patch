@@ -1,0 +1,11 @@
+--- qscintilla.pro	2021-10-14 11:06:02.373415231 +0100
++++ qscintilla.pro	2022-01-03 20:14:05.613307904 +0000
+@@ -17,6 +17,8 @@
+ # This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+ # WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+ 
++CONFIG += conan_basic_setup
++include(conanbuildinfo.pri)
+ 
+ !win32:VERSION = 15.1.1
+ 
